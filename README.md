@@ -1,6 +1,8 @@
-# ConditionNET: Learning Preconditions and Effects for Anomaly Detection and Recovery
+# Multimodal Transformer Models for Human Action Classification
 
-Webpage for "ConditionNET: Learning Preconditions and Effects for Anomaly Detection and Recovery"
+Webpage for "Multimodal Transformer Models for Human Action Classification"
+- Zoltan Varga
+- Esteve Valls Mascaro
 - Daniel Sliwowski
 - Dongheui Lee
 
