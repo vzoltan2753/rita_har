@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="2.5028417cm"
+   height="1.1682924cm"
+   viewBox="0 0 70.946694 33.116951"
+   version="1.1"
+   id="svg545"
+   sodipodi:docname="robustness_legend.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1848"
+     inkscape:window-height="1136"
+     id="namedview547"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     units="cm"
+     inkscape:zoom="5.8882236"
+     inkscape:cx="25.925963"
+     inkscape:cy="21.966708"
+     inkscape:window-x="72"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg545" />
+  <metadata
+     id="metadata2">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:date>2024-09-02T10:34:45.611794</dc:date>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Matplotlib v3.7.2, https://matplotlib.org/</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6"
+     style="stroke-linecap:butt;stroke-linejoin:round">
+    <style
+       type="text/css"
+       id="style4">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+  </defs>
+  <g
+     style="stroke-linecap:butt;stroke-linejoin:round"
+     id="patch_1"
+     transform="translate(-98.823789,-8.9520977)" />
+  <g
+     id="patch_15"
+     style="stroke-linecap:butt;stroke-linejoin:round"
+     transform="translate(-98.823789,-8.9520977)">
+    <path
+       d="M 54.205312,37.35625 H 164.36 q 2,0 2,-2 V 7 q 0,-2 -2,-2 H 54.205312 q -2,0 -2,2 v 28.35625 q 0,2 2,2 z"
+       style="opacity:0;fill:none;stroke-linecap:butt;stroke-linejoin:round"
+       id="path456"
+       inkscape:connector-curvature="0" />
+  </g>
+  <defs
+     id="defs543">
+    <clipPath
+       id="p76cbf6d41b"
+       style="stroke-linecap:butt;stroke-linejoin:round">
+      <rect
+         x="21.42"
+         y="28.857599"
+         width="132.804"
+         height="185.1696"
+         id="rect540"
+         style="stroke-linecap:butt;stroke-linejoin:round" />
+    </clipPath>
+  </defs>
+  <g
+     id="g2422"
+     transform="translate(3.4104873,-3.8721312)"
+     style="stroke-linecap:butt;stroke-linejoin:round">
+    <g
+       transform="matrix(0.65609321,0,0,0.75000002,-34.87437,-3.3266975)"
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="patch_16">
+      <path
+         inkscape:connector-curvature="0"
+         id="path459"
+         style="fill:#519de9;stroke-linecap:butt;stroke-linejoin:round"
+         d="m 56.205312,16.598438 h 20 v -7 h -20 z" />
+    </g>
+    <g
+       transform="matrix(0.65609321,0,0,0.75000002,-34.87437,-3.5348459)"
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="patch_17">
+      <path
+         inkscape:connector-curvature="0"
+         id="path501"
+         style="fill:#a30000;stroke-linecap:butt;stroke-linejoin:round"
+         d="m 56.205312,31.276563 h 20 v -7 h -20 z" />
+    </g>
+    <text
+       id="text2313"
+       y="8.8414307"
+       x="18.79451"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:7px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:justify;letter-spacing:0px;word-spacing:0.75000006px;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.42519686;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="8.8414307"
+         x="18.79451"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:7px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:justify;writing-mode:lr-tb;text-anchor:start;stroke-width:0.42519686;stroke-linecap:butt;stroke-linejoin:round"
+         id="tspan2311"
+         sodipodi:role="line">Vision available</tspan></text>
+    <text
+       id="text2317"
+       y="19.641876"
+       x="18.79451"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:7px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:justify;letter-spacing:0px;word-spacing:0.75000006px;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.42519686;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="19.641876"
+         x="18.79451"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:7px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:justify;writing-mode:lr-tb;text-anchor:start;stroke-width:0.42519686;stroke-linecap:butt;stroke-linejoin:round"
+         id="tspan2315"
+         sodipodi:role="line">Vision removed</tspan></text>
+  </g>
+</svg>

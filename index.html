@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <meta property="og:title"
+    content="Multimodal Transformer Models for Human Action Classification" />
+  <meta property="og:url" content="https://vzoltan2753.github.io/Self-Aware/" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <title>Multimodal Transformer Models for Human Action Classification</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="icon" href="static/figures/icon2.png">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <script src="static/js/audioPlayer.js" defer></script>
+</head>
+
+<body>
+
+  <!--
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="https://dsliwowski1.github.io">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More Research
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://dsliwowski1.github.io/HOI4ABOT_page/">
+              HOI4ABOT
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+  -->
+
+  <section class="publication-header">
+    <div class="hero-body">
+      <div class="container is-max-widescreen">
+        <!-- <div class="columns is-centered"> -->
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Multimodal Transformer Models for Human Action Classification</h1>
+          <div class="is-size-3 publication-authors">
+            Robot Intelligence Technology and Applications (RiTA 2024)
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="publication-author-block">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><a href="https://vzoltan2753.github.io/" target="_blank">Zolt&aacute;n Varga</a>,</span>
+              <span class="author-block"><a href="https://evm7.github.io/" target="_blank">Esteve Valls Mascaro</a>,</span>
+              <span class="author-block"><a href="https://dsliwowski1.github.io/" target="_blank">Daniel Sliwowski</a>,</span>
+              <span class="author-block"><a href="https://www.tuwien.at/etit/ict/asl/team/dongheui-lee"
+                  target="_blank">Dongheui Lee</a></span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Technische Universit&auml;t Wien (TU Wien), German Aerospace Center (DLR)</span>
+            </div>
+
+
+
+            <div class="column has-text-centered">
+              <div class="publication-links"
+                style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+                <!-- arXiv Button -->
+                <span class="link-block">
+                  <a href="put-archive-link" target="_blank" class="external-link button is-normal is-rounded">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- PDF Link. -->
+                <!--              <span class="link-block">-->
+                <!--                <a href="static/source/ADDHEREPDF.pdf" target="_blank"-->
+                <!--                  class="external-link button is-normal is-rounded">-->
+                <!--                  <span class="icon">-->
+                <!--                    <i class="fas fa-file-pdf"></i>-->
+                <!--                  </span>-->
+                <!--                  <span>Paper</span>-->
+                <!--                </a>-->
+                <!--              </span>-->
+                <!--                            </span>-->
+                <!-- </span> -->
+                <!-- Colab Link. -->
+                <!--              <span class="link-block">-->
+                <!--                <a href="ADD HERE THE CODE" target="_blank"-->
+                <!--                class="external-link button is-normal is-rounded">-->
+                <!--                <span class="icon">-->
+                <!--                  <i class="fab fa-github"></i>-->
+                <!--                </span>-->
+                <!--                <span>Code</span>-->
+                <!--              </a>-->
+                <!--             </span>-->
+
+                <!--              <span class="link-block">-->
+                <!--                <a href="ADD HERE REPLICATE IF NEEDED" target="_blank"-->
+                <!--                class="external-link button is-normal is-rounded">-->
+                <!--                <span class="icon">-->
+                <!--                  <i class="fas fa-rocket"></i>-->
+                <!--                </span>-->
+                <!--                <span>Demo</span>-->
+                <!--              </a>-->
+                <!--              </span>-->
+                <!-- </span> -->
+                <!-- Colab Link. -->
+
+<!--                <span>-->
+<!--                  <a href="https://drive.google.com/file/d/1hZkD2TG9LZhJLHb-JB-SZeuHdmBbSbRw/view?usp=sharing" class="external-link button is-normal is-rounded">-->
+<!--                    <span class="icon">-->
+<!--                    <i class="fa fa-database"></i>-->
+<!--                    </span>-->
+<!--                    <span>Dataset</span>-->
+<!--                  </a>-->
+<!--                </span>-->
+
+                <!-- Play/Pause button and audio -->
+<!--                <span class="link-block">-->
+<!--		          <span class="audio-player" style="display: inline-block; vertical-align: middle;">-->
+<!--			        <button id="audio-control-button" onclick="toggleAudio()" class="button is-normal is-rounded">-->
+<!--			          <span class="icon">-->
+<!--			            <i id="play-icon" class="fas fa-play"></i>-->
+<!--			          </span>-->
+<!--			          <span id="play-text">Podcast</span>-->
+<!--			        </button>-->
+<!--                    <audio id="audio-file" src="static/audio/PodCastAudio.wav" type="audio/wav" style="display: none;"></audio>-->
+<!--		          </span>-->
+<!--	            </span>-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 
+<section class="hero is-small">
+  <!~~ <div class="hero-body"> ~~>
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!~~ <div id="results-carousel" class="carousel results-carousel"> ~~>
+      <div class="container">
+      <div class="item">
+      <div class="column is-centered has-text-centered">
+        <img src="static/figures/teaser.png" alt="UNIMASKM"/>
+      </div>
+
+    </div>
+  </div>
+ <!~~  </div> ~~>
+  </div>
+  </div>
+ <!~~  </div> ~~>
+</section>
+ -->
+
+<!--  <section class="hero is-small">-->
+<!--    <section class="hero teaser">-->
+<!--      <div class="container is-max-desktop">-->
+<!--        <div class="hero-body">-->
+<!--          <div class="container">-->
+<!--            <div class="item">-->
+<!--              <p style="margin-bottom: 30px">-->
+
+<!--                <video poster="" id="tree" autoplay controls muted loop height="100%">-->
+<!--                  <source src="static/videos/ConditionNET_vid.mp4" type="video/mp4">-->
+<!--                </video>-->
+<!--              </p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      </div>-->
+<!--    </section>-->
+
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Most research in deep learning focuses on a single modality, such as image, text, or proprioception data. However, humans benefit from leveraging information from diverse senses on a daily basis for richer information acquisition. Inspired by this, we design a transformer-based multimodal model for human action recognition and thoroughly evaluate its performance and robustness. Furthermore, we explore fusion methods to assess how modalities are best combined. Lastly, a model is trained to infer (generate) a missing modality. Our study shows that multimodal transformers perform better than their modality-specific equivalents. We achieve an improvement of 10.1&percnt; when using multiple data modalities over our vision-only baseline and outperform current state-of-the-art approaches by 32.8&percnt;. Furthermore, we evaluate a mean square error of 9.6&percnt; in the tactile force reconstruction task. The implemented model can be applied in scenarios where robotic assistance depends on recognising human actions for decision-making, tackling situations where vision is limited or audio and other modalities are required for deeper understanding.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--/ Abstract. -->
+      </div>
+    </section>
+
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container">
+
+          <div class="column is-centered has-text-centered">
+            <img src="static/figures/overview.svg" alt="Model overview" />
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+
+
+
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Model architecture in early and late fusion</h2>
+            <div class="content has-text-justified">
+              <p>
+                First, we require that information from all modalities be projected into an embedding space of the same size. For body skeleton, tactile force, and EMG data, we use a linear layer to project the data. In the case of the vision modality, we use a frozen <a href="https://dinov2.metademolab.com/">DINOv2 backbone</a> to compute the image features for each frame in the recording. Furthermore, we compute the spectrograms of the audio signal and encode them with a frozen <a href="https://imagebind.metademolab.com/">ImageBind</a> audio encoder, then project them via linear layer to create audio features. After creating tokens from raw data, they get passed to the encoder. We encode the temporal information about the data by adding a sinusoidal positional embedding and differentiate between the modalities via modality embedding.
+              </p>
+              <p>
+                We consider two different procedures for fusing tokens of separate modalities. On one hand, in <i>early fusion</i>, the temporal sequence of each modality gets stacked together before encoding. The class token fo this encoder is summarising information along the time axis and among modalities.
+              </p>
+              <p>
+                On the other hand, in <i>late fusion</i>, each modality has a separate encoder. The temporal encoders process information along the time axis, focusing on one modality at a time. Each encoder works with one token per sensor measurement and an additional class token that is not shared among modalities. After the first block of encoders, only the class tokens are passed to the modality encoder. They are stacked into a sequence where modality embeddings and a new class token are added.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container">
+
+          <div class="column is-centered has-text-centered">
+            <img src="static/figures/models.svg" alt="Early and late fusion models" />
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Experimental setup</h2>
+            <div class="content has-text-justified">
+              <p>
+                We consider the <a href="https://action-net.csail.mit.edu/">ActionSense dataset</a> as it contains various sensory data like body and finger tracking (B), EMG muscle activity (E), tactile force (F), audio (A), and video data (V) from different perspectives in a kitchen scenario where a person performs simple tasks. Food preparation and corresponding household chores are some of the most desired topics in the field of automation and robotics. We report the evaluation of our Transformer-based model compared to an <a href="https://github.com/delpreto/ActionNet/tree/master/parsing_data/example_activity_classification">LSTM baseline</a>. We adopt cross-validation among the five subjects of the dataset, and evaluate by comparing uni- and multimodal models based on their understanding of human actions. We measure the action recognition ability of models by classification accuracy.
+              </p>
+              <p>
+                The table below shows the results of our ablation study for uni- and multimodal models. The model that achieved the highest accuracy is highlighted in bold, and the second highest is underlined. Multimodal models performing worse than the highest corresponding unimodal model are marked with an arrow. All values depict accuracies in &percnt;.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container">
+
+          <div class="column is-centered has-text-centered">
+            <img src="static/figures/table.png" alt="Results" />
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Attention scores</h2>
+            <div class="content has-text-justified">
+              <p>
+                The multimodal model with late fusion separates the time evolution from the modality fusion, allowing us to compare modalities without time dependency. We calculated the average attention score over the heads and layers of all attention blocks and extracted the row corresponding to the class token. The figure below shows that video modality alone gets more attention than all other tokens combined. Other modalities scored around 1&percnt;, with the tactile force being higher. The learnable parameter that serves as the initial class token is of little importance, as it does not hoard any information about the inputs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container">
+
+          <div class="column is-centered has-text-centered">
+            <img src="static/figures/attn_bar.svg" alt="Attention scores" />
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Masking</h2>
+            <div class="content has-text-justified">
+              <p>
+                During the experiments, we noticed a strong dependency of the multi-modal models on the vision. To overcome this, we add regularisation in the form of masking, similar to the <a href="https://arxiv.org/abs/2111.06377">MAE model</a>. This process makes the model focus more on the remaining tokens and acts as a powerful form of regularisation if applied stochastically. Our implementation generates masks separately for each element of the batched input. We evaluate the influence of masking the modalities on the performance of the model. The previous table shows that by applying masking we can improve the performance of the late fusion models by an additional 7.27&percnt;. We achieve the highest performance (81.8&percnt;) using a random mask with stochastic probability of 50&percnt;. We do not observe a performance increase in the early fusion model; we consider this to be caused by the high number of tokens the encoder has to process simultaneously which increases the complexity of the task and reduces overall performance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container">
+
+          <div class="column is-centered has-text-centered">
+            <img src="static/figures/masking_notation.png" alt="Dataset statistics" />
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Robustness study</h2>
+            <div class="content has-text-justified">
+              In real scenarios, merging multiple modalities has additional benefits besides enhancing the action recognition capabilities. For instance, a person can identify water boiling despite being in a different room and can peel an apple while watching the phone. Thus, we showcase the benefit of multimodal models when vision is not given at inference time but still used during training. In a robotics scenario, this would be the case when the camera sensor malfunctions or is under bad lighting conditions. Testing for robustness shows whether the model can still recognise actions after one of the sensors stops functioning. We aim to demonstrate that using multiple modalities has advantages besides enhancing the recognition performance. Removing a sensor entirely undoubtedly causes a drop in accuracy, but at a lower extent for masked models. When testing the masked models without vision, they achieve similar accuracy as the model that never had access to vision (vision mask with a probability of 1). Contrary to that, the unmasked model strongly depends on the visual input and completely fails when excluded.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container">
+
+          <div class="column is-centered has-text-centered">
+            <img src="static/figures/robustness.svg" alt="Robustness study" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="static/figures/robustness_legend.svg" alt="Robustness study legend" />
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+      <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Modality inference</h2>
+            <div class="content has-text-justified">
+              We evaluate a model trained to infer a missing modality using features from other modalities. Although not part of the main human action recognition task, this experiment demonstrates our model's ability to understand the relationship between different modalities. The force modality was removed from all data inputs to simulate the missing modality. Then, the model was trained to reconstruct the missing data using body skeleton, EMG, audio, and video. The plot below shows the predicted force sensor readouts against the ground truth. The force sensors with indices 1--16 are located on the left hand of the subject, and those with 17--32 on the right one. We are able to reconstruct the tactile force information with a mean square error of 9.6&percnt;.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container">
+
+          <div class="column is-centered has-text-centered">
+            <img src="static/figures/robustness.svg" alt="Robustness study" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="static/figures/infer.svg" alt="Robustness study legend" />
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>
+          @inproceedings{varga_multimodal_2024,
+          author = {Varga, Zolt&aacute;n and Mascaro, Esteve Valls and Sliwowski, Daniel Jan and Dongheui, Lee},
+          title = {Multimodal transformer models for human action classification},
+          series = {Lecture {Notes} in {Networks} and {Systems}},
+          publisher = {Springer},
+          year = {2024}}
+        </code></pre>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <!--  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+      href="https://homes.cs.washington.edu/~kpar/nerfies/videos/nerfies_paper.pdf">
+      <i class="fas fa-file-pdf"></i>
+    </a>
+    <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+      <i class="fab fa-github"></i>
+    </a>
+  </div> -->
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              Website source code based on the <a href="https://nerfies.github.io/"> Nerfies</a> project page. If you
+              want to reuse their <a href="https://github.com/nerfies/nerfies.github.io">source code</a>, please credit
+              them appropriately.
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </footer>
+
+</body>
+
+</html>
